@@ -5,10 +5,20 @@ baseline: spec
 	spec for: #'common' do: [
 		spec 
 			package: #'MonticelloTonel-Core';
-			package: #'MonticelloTonel-FileSystem' with: [ spec requires: #('MonticelloTonel-Core') ];
-			package: #'MonticelloTonel-Tests'.
+			package: #'MonticelloTonel-Tests' with: [ spec requires: #( 'MonticelloTonel-Core' ) ].
 		
 		spec 
 			group: 'default' with: #('core' 'tests');
-			group: 'core' with: #('MonticelloTonel-Core' 'MonticelloTonel-FileSystem');
-			group: 'tests' with: #('MonticelloTonel-Tests') ]
+			group: 'core' with: #('MonticelloTonel-Core' );
+			group: 'tests' with: #('MonticelloTonel-Tests') ].
+
+	spec for: #'pharo' do: [
+		spec 
+			package: #'MonticelloTonel-Core' 
+				with: [ spec includes: #( 'MonticelloTonel-FileSystem' ) ];
+			package: #'MonticelloTonel-FileSystem' 
+				with: [ spec  requires: #( 'MonticelloTonel-Core' ) ];
+			yourself.
+		spec 
+			group: 'core' with: #('MonticelloTonel-FileSystem');
+			yourself]

@@ -1,1 +1,1 @@
-SystemOrganization addCategory: #BaselineOfTonel!
+SystemOrganization addCategory: #'BaselineOfTonel'!
