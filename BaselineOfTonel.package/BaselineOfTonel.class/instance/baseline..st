@@ -21,4 +21,15 @@ baseline: spec
 			yourself.
 		spec 
 			group: 'core' with: #('MonticelloTonel-FileSystem');
-			yourself]
+			yourself].
+
+	spec for: #'gemstone' do: [
+		spec 
+			package: #'MonticelloTonel-Core' 
+				with: [ spec includes: #( 'MonticelloTonel-GemStone-Directory' ) ];
+			package: #'MonticelloTonel-GemStone-Directory' 
+				with: [ spec  requires: #( 'MonticelloTonel-Core' ) ];
+			yourself.
+		spec 
+			group: 'core' with: #('MonticelloTonel-GemStone-Directory');
+			yourself].
