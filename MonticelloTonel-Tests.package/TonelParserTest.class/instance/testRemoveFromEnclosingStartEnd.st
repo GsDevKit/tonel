@@ -2,7 +2,7 @@ tests
 testRemoveFromEnclosingStartEnd
 	| parser nl |
 	
-	nl := OSPlatform current lineEnding.
+	nl := TonelWriter lineEnding.
 	parser := TonelParser new.
 	self 
 		assert: (parser 

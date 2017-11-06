@@ -1,3 +1,3 @@
 private
 newLine
-	 ^ OSPlatform current lineEnding
+	 ^ self class lineEnding

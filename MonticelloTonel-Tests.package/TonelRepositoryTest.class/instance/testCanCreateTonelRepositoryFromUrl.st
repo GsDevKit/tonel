@@ -4,4 +4,4 @@ testCanCreateTonelRepositoryFromUrl
 	self assert: (repository isKindOf: TonelRepository).
 	
 	repository := MCRepository fromUrl: 'tonel://.'.
-	self assert: (repository isKindOf: TonelRepository) 
+	self assert: (repository isKindOf: TonelRepository)

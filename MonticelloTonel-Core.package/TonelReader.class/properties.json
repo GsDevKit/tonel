@@ -1,13 +1,14 @@
 {
-	"commentStamp" : "EstebanLorenzano 9/11/2017 12:10",
-	"super" : "MCVersionReader",
 	"category" : "MonticelloTonel-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "EstebanLorenzano 9/11/2017 12:10",
 	"instvars" : [
-		"packageDirectory"
-	],
+		"packageDirectory" ],
 	"name" : "TonelReader",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "MCVersionReader",
+	"type" : "normal" }

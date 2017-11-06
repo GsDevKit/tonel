@@ -1,0 +1,18 @@
+{
+	"class" : {
+		"canReadFileNamed:" : " 11/06/2017 11:28:40",
+		"definitionOrders" : " 11/06/2017 11:28:40",
+		"extension" : " 11/06/2017 11:28:40",
+		"isAbstract" : " 11/06/2017 11:28:40",
+		"on:fileName:" : " 11/06/2017 11:28:40" },
+	"instance" : {
+		"canBeLoaded:" : " 11/06/2017 11:28:40",
+		"categoriesFrom:" : " 11/06/2017 11:28:40",
+		"fileUtils" : " 11/06/2017 11:28:40",
+		"loadDefinitions" : " 11/06/2017 11:28:40",
+		"loadDependencies" : " 11/06/2017 11:28:40",
+		"loadPackage" : " 11/06/2017 11:28:40",
+		"loadVersionInfo" : " 11/06/2017 11:28:40",
+		"packageDirectory" : " 11/06/2017 11:28:40",
+		"packageDirectory:" : " 11/06/2017 11:28:40",
+		"packageNameFromPackageDirectory" : " 11/06/2017 11:28:40" } }

@@ -22,7 +22,7 @@ testWriteSnapshot
 			'MCSnapshotTest.extension.st'
 			'package.st').
 	
-	nl := OSPlatform current lineEnding.
+	nl := TonelWriter lineEnding.
 	self 
 		assert: (mem / 'MonticelloMocks' / 'MCMockClassA.class.st') contents
 		equals: (self expectedMCMockClassAClassSt withLineEndings: nl).

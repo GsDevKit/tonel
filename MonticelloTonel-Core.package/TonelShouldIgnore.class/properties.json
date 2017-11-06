@@ -1,11 +1,14 @@
 {
-	"commentStamp" : "EstebanLorenzano 9/11/2017 11:56",
-	"super" : "Notification",
 	"category" : "MonticelloTonel-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
-	"instvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "EstebanLorenzano 9/11/2017 11:56",
+	"instvars" : [
+		 ],
 	"name" : "TonelShouldIgnore",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "Notification",
+	"type" : "normal" }

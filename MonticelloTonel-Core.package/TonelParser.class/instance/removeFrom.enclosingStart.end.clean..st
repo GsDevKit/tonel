@@ -10,7 +10,7 @@ removeFrom: aString enclosingStart: startChar end: endChar clean: cleanSymbol
 	
 	(#(both left) includes: cleanSymbol) 
 		ifTrue: [ 
-			stop := OSPlatform current lineEnding size.
+			stop := TonelWriter lineEnding size.
 			[ (stop > 0) and: [ self isSeparator: (ch := result peek) ] ]
 			whileTrue: [ 
 				(self isEnter: ch) ifTrue: [ stop := stop - 1 ].
@@ -24,7 +24,7 @@ removeFrom: aString enclosingStart: startChar end: endChar clean: cleanSymbol
 	result skip: -1.
 	(#(both right) includes: cleanSymbol)
 		ifTrue: [ 
-			stop := OSPlatform current lineEnding size.
+			stop := TonelWriter lineEnding size.
 			[ (stop > 0) and: [ self isSeparator: (ch := result peek) ] ]
 			whileTrue: [ 
 				(self isEnter: ch) ifTrue: [ stop := stop - 1 ].

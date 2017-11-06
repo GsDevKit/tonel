@@ -1,15 +1,16 @@
 {
-	"commentStamp" : "EstebanLorenzano 9/11/2017 12:10",
-	"super" : "MCWriter",
 	"category" : "MonticelloTonel-Core",
-	"classinstvars" : [ ],
-	"pools" : [ ],
-	"classvars" : [ ],
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "EstebanLorenzano 9/11/2017 12:10",
 	"instvars" : [
 		"snapshot",
 		"sourceDir",
-		"packageDir"
-	],
+		"packageDir" ],
 	"name" : "TonelWriter",
-	"type" : "normal"
-}
+	"pools" : [
+		 ],
+	"super" : "MCWriter",
+	"type" : "normal" }

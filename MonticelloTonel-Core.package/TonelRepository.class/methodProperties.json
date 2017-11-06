@@ -1,0 +1,24 @@
+{
+	"class" : {
+		"basicFromUrl:" : " 11/06/2017 11:28:40",
+		"description" : " 11/06/2017 11:28:40",
+		"urlSchemes" : " 11/06/2017 11:28:40" },
+	"instance" : {
+		"allFileNamesForVersionNamed:" : " 11/06/2017 11:28:40",
+		"asRepositorySpecFor:" : " 11/06/2017 11:28:40",
+		"basicStoreVersion:" : " 11/06/2017 11:28:40",
+		"description" : " 11/06/2017 11:28:40",
+		"fileDirectoryOn:" : " 11/06/2017 11:28:40",
+		"fileUtils" : " 11/06/2017 11:28:40",
+		"filterFileNames:forVersionNamed:" : " 11/06/2017 11:28:40",
+		"loadAllFileNames" : " 11/06/2017 11:28:40",
+		"packageDescriptionFromPackageDirectory:" : " 11/06/2017 11:28:40",
+		"packageDescriptionsFromReadableFileNames" : " 11/06/2017 11:28:40",
+		"readStreamForFileNamed:do:" : " 11/06/2017 11:28:40",
+		"readableFileNames" : " 11/06/2017 11:28:40",
+		"readableFileReferences" : " 11/06/2017 11:28:40",
+		"versionFrom:" : " 11/06/2017 11:28:40",
+		"versionInfoForPackageDirectory:" : " 11/06/2017 11:28:40",
+		"versionInfoFromVersionNamed:" : " 11/06/2017 11:28:40",
+		"versionNameFromFileName:" : " 11/06/2017 11:28:40",
+		"versionWithInfo:ifAbsent:" : " 11/06/2017 11:28:40" } }

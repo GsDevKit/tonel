@@ -29,7 +29,7 @@ Class {
 	#superclass : #Object,
 	#category : #Kernel
 }
-' withLineEndings: OSPlatform current lineEnding).
+' withLineEndings: TonelWriter lineEnding).
 
 	stream := String new writeStream.
 	def := MCClassDefinition
@@ -71,4 +71,4 @@ Class {
 	],
 	#category : #Kernel
 }
-' withLineEndings: OSPlatform current lineEnding).
+' withLineEndings: TonelWriter lineEnding).
