@@ -11,7 +11,7 @@ methodBody
 	 all that needs to be skipped "
 	| result char prevChar comment string count |
 	
-	result := String new writeStream.
+	result := WriteStreamPortable on: String new.
 
 	comment := false.
 	string := false.
