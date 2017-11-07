@@ -1,4 +1,4 @@
-*monticellotonel-pharo-tests
+*monticellotonel-gemstone-tests
 testLoadAllFileNames
 	| mem |
 	
