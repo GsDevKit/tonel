@@ -2,9 +2,6 @@
 	"class" : {
 		 },
 	"instance" : {
-		"expectedMCMockASubclassClassSt" : "11/06/2017 11:28:40",
-		"expectedMCMockClassAClassSt" : "11/06/2017 11:28:40",
-		"expectedMCSnapshotTestExtensionSt" : "11/06/2017 11:28:40",
 		"testSplitMethodSourceInto" : "dkh 11/06/2017 12:14",
-		"testWriteClassDefinitionOn" : "dkh 11/06/2017 12:14",
+		"testWriteClassDefinitionOn" : "dkh 11/07/2017 12:48",
 		"testWriteMethodDefinitionOn" : "dkh 11/06/2017 12:15" } }

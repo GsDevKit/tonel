@@ -1,8 +1,8 @@
 *monticellotonel-gemstone-tests
-newMemoryFileSystemSnapshot: aSnapshop
+newFileDirectorySnapshot: aSnapshot
 	"This method assumes writer works. If it is broken (the tests should show it), this tests 
 	 will break too."
-	| mem |
-	mem := FileSystem memory root.
-	(TonelWriter on: mem) writeSnapshot: aSnapshop.
-	^ mem
+	| dir |
+	dir := ServerFileDirectory default.
+	(TonelWriter on: dir) writeSnapshot: aSnapshot.
+	^ dir

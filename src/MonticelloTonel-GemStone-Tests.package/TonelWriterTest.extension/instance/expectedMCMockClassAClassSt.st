@@ -1,4 +1,4 @@
-private
+*monticellotonel-gemstone-tests
 expectedMCMockClassAClassSt
 	^ '"
 This is a mock class. The Monticello tests manipulated it to simulate a developer modifying code in the image.
@@ -10,10 +10,9 @@ Class {
 		''ivar''
 	],
 	#classVars : [
-		''CVar'',
-		''InitializationOrder''
+		''CVar''
 	],
-	#category : #MonticelloMocks
+	#category : #Monticello-Mocks
 }
 
 { #category : #''as yet unclassified'' }
@@ -22,16 +21,8 @@ MCMockClassA class >> cVar [
 ]
 
 { #category : #''as yet unclassified'' }
-MCMockClassA class >> initializationOrder [
-
-	^ InitializationOrder
-]
-
-{ #category : #''as yet unclassified'' }
 MCMockClassA class >> initialize [
-	CVar := #initialized.
-	InitializationOrder := 1.
-
+	CVar _ #initialized
 ]
 
 { #category : #''as yet unclassified'' }
@@ -42,7 +33,7 @@ MCMockClassA class >> one [
 
 { #category : #''as yet unclassified'' }
 MCMockClassA class >> touchCVar [
-	CVar := #touched
+	CVar _ #touched
 ]
 
 { #category : #numeric }
@@ -85,7 +76,7 @@ MCMockClassA >> one [
 MCMockClassA >> q [
 ]
 
-{ #category : #boolean }
+{ #category : #numeric }
 MCMockClassA >> truth [
 	^ true
 ]

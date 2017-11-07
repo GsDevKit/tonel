@@ -1,10 +1,10 @@
 *monticellotonel-gemstone-tests
 testLoadDefinitions
-	| snapshot mem reader |
+	| snapshot dir reader |
 	
 	snapshot := self mockSnapshot.
-	mem := self newMemoryFileSystemSnapshot: snapshot.
-	reader := TonelReader on: mem fileName: 'MonticelloMocks'.
+	dir := self newFileDirectorySnapshot: snapshot.
+	reader := TonelReader on: dir fileName: 'MonticelloMocks'.
 	reader loadDefinitions.
 	
 	self 

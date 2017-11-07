@@ -4,7 +4,7 @@ testWriteClassDefinitionOn
 	
 	writer := TonelWriter new.
 
-	stream := String new writeStream.
+	stream := WriteStreamPortable on: String new .
 	def := MCClassDefinition
 		name: #SomeObject
 		superclassName: #Object

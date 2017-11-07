@@ -1,4 +1,4 @@
-private
+*monticellotonel-pharo-tests
 expectedMCSnapshotTestExtensionSt
 	^ 'Extension { #name : #MCSnapshotTest }
 
