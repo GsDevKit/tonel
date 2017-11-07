@@ -2,16 +2,16 @@
 	"class" : {
 		 },
 	"instance" : {
-		"assertParse:rule:equals:" : " 11/06/2017 11:28:40",
-		"parse:rule:" : " 11/06/2017 11:28:40",
-		"shouldParse:rule:raise:" : " 11/06/2017 11:28:40",
-		"testComment" : " 11/06/2017 11:28:40",
-		"testExtractSelector" : " 11/06/2017 11:28:40",
-		"testMetadata" : " 11/06/2017 11:28:40",
-		"testMethod" : " 11/06/2017 11:28:40",
-		"testMethodBody" : " 11/06/2017 11:28:40",
-		"testMethodDef" : " 11/06/2017 11:28:40",
-		"testMethodDefList" : " 11/06/2017 11:28:40",
+		"assertParse:rule:equals:" : "11/06/2017 11:28:40",
+		"parse:rule:" : "11/06/2017 11:28:40",
+		"shouldParse:rule:raise:" : "11/06/2017 11:28:40",
+		"testComment" : "11/06/2017 11:28:40",
+		"testExtractSelector" : "11/06/2017 11:28:40",
+		"testMetadata" : "11/06/2017 11:28:40",
+		"testMethod" : "11/06/2017 11:28:40",
+		"testMethodBody" : "11/06/2017 11:28:40",
+		"testMethodDef" : "11/06/2017 11:28:40",
+		"testMethodDefList" : "11/06/2017 11:28:40",
 		"testRemoveFromEnclosingStartEnd" : "dkh 11/06/2017 12:14",
-		"testType" : " 11/06/2017 11:28:40",
-		"testTypeDef" : " 11/06/2017 11:28:40" } }
+		"testType" : "11/06/2017 11:28:40",
+		"testTypeDef" : "11/06/2017 11:28:40" } }

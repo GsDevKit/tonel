@@ -1,4 +1,4 @@
-tests
+*monticellotonel-pharo-tests
 testLoadDefinitions
 	| snapshot mem reader |
 	

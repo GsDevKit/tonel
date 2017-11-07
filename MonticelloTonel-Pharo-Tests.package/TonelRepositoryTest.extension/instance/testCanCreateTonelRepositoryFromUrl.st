@@ -1,4 +1,4 @@
-tests
+*monticellotonel-pharo-tests
 testCanCreateTonelRepositoryFromUrl
 	repository := MCRepository fromUrl: (self homeDirectoryUrl scheme: #tonel) asString.
 	self assert: (repository isKindOf: TonelRepository).

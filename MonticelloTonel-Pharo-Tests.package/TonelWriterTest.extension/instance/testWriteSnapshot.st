@@ -1,4 +1,4 @@
-tests
+*monticellotonel-pharo-tests
 testWriteSnapshot
 	| writer mem nl |
 	

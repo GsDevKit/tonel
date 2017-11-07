@@ -1,4 +1,4 @@
-tests
+*monticellotonel-pharo-tests
 testLoadAllFileNames
 	| mem |
 	
