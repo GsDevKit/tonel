@@ -1,5 +1,5 @@
 asserting
 shouldParse: aString rule: rule raise: error
   | parser |
-  parser := TonelParser parseString: aString.
+  parser := TonelParser onString: aString.
   self should: [ parser perform: rule ] raise: error
