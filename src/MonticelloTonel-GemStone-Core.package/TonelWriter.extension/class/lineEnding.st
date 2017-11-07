@@ -1,5 +1,5 @@
 *monticellotonel-gemstone-core
 lineEnding
-	"Answer the os-specific line endings"
+  "Answer the os-specific line endings"
 
-	^ Character lf
+  ^ String with: Character lf
