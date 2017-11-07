@@ -3,8 +3,8 @@
 		 },
 	"instance" : {
 		"assertParse:rule:equals:" : "11/06/2017 11:28:40",
-		"parse:rule:" : "11/06/2017 11:28:40",
-		"shouldParse:rule:raise:" : "11/06/2017 11:28:40",
+		"parse:rule:" : "dkh 11/07/2017 09:02",
+		"shouldParse:rule:raise:" : "dkh 11/07/2017 09:02",
 		"testComment" : "11/06/2017 11:28:40",
 		"testExtractSelector" : "11/06/2017 11:28:40",
 		"testMetadata" : "11/06/2017 11:28:40",
