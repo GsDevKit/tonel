@@ -1,3 +1,3 @@
 *monticellotonel-gemstone-core
 parseString: aString 
-	^ self parseStream: aString readStream
+	^ self parseStream: (ReadStreamPortable on: aString)
