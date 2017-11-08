@@ -1,4 +1,4 @@
 accessing
 packageWriter
 
-   ^packageWriter
+   ^packageWriter ifNil: [ packageWriter := self defaultPackageWriter ]
