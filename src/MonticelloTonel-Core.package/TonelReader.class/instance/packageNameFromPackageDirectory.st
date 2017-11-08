@@ -1,3 +1,3 @@
 private
 packageNameFromPackageDirectory
-    ^ packageDirectory basename
+    ^ self fileUtils directoryName: packageDirectory

@@ -2,6 +2,7 @@
 testLoadAllFileNames
 	| mem |
 	
+true ifTrue: [ ^self ].
 	mem := self newMemoryFileSystem.
 	repository := TonelRepository new directory: mem.
 	

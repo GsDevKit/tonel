@@ -5,7 +5,7 @@ loadDefinitions
 	definitionOrders := self class definitionOrders.
 	newDefinitions := ((self packageDirectory entries
 		select: [ :each | self canBeLoaded: each ]) 
-		collect: [ :each | each readStreamDo: [ :s | TonelParser parseStream: s ] ])
+		collect: [ :each | each readFileStreamDo: [ :s | TonelParser parseStream: s ] ])
 		flattened
 		sort: [ :a :b | (definitionOrders at: a class) < (definitionOrders at: b class) ].
 

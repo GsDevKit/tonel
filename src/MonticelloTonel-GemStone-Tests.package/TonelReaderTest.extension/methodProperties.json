@@ -2,5 +2,7 @@
 	"class" : {
 		 },
 	"instance" : {
-		"newFileDirectorySnapshot:" : "dkh 11/07/2017 12:34",
+		"directory" : "dkh 11/08/2017 06:29",
+		"newFileDirectorySnapshot:" : "dkh 11/08/2017 06:32",
+		"tearDown" : "dkh 11/08/2017 06:29",
 		"testLoadDefinitions" : "dkh 11/07/2017 12:35" } }
