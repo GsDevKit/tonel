@@ -1,9 +1,10 @@
 language: smalltalk
 sudo: false
 
-os:
-  - linux
-  - osx
+os: linux
+#os:
+#  - linux
+#  - osx
 
 smalltalk:
   - Pharo-5.0

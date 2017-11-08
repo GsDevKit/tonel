@@ -1,0 +1,15 @@
+{
+	"category" : "Tonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"packageWriter",
+		"snapshot" ],
+	"name" : "TonelWriter",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

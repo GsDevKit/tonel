@@ -4,17 +4,25 @@ baseline: spec
 
 	spec for: #'common' do: [
 		spec 
-			package: 'MonticelloTonel-Core';
-			package: 'MonticelloTonel-Tests' with: [ spec requires: #( 'MonticelloTonel-Core' ) ].
+			package: 'Tonel-Core';
+			package: 'Tonel-Tests' with: [ spec requires: #( 'Tonel-Core' ) ];
+			package: 'MonticelloTonel-Core' with: [ spec requires: #( 'Tonel-Core' ) ];
+			package: 'MonticelloTonel-Tests' with: [ spec requires: #( 'MonticelloTonel-Core' ) ];
+			yourself.
 		
 		spec 
-			group: 'default' with: #('core' 'tests');
+			group: 'basic' with: #('Tonel-Core' );
+			group: 'basic tests' with: #('Tonel-Tests');
 			group: 'core' with: #('MonticelloTonel-Core' );
 			group: 'tests' with: #('MonticelloTonel-Tests');
 			yourself ].
 
 	spec for: #'pharo' do: [
 		spec 
+			package: 'Tonel-Core' 
+				with: [ spec includes: #( 'Tonel-Pharo-Core' ) ];
+			package: 'Tonel-Pharo-Core' 
+				with: [ spec requires: #( 'Tonel-Core' ) ];
 			package: 'MonticelloTonel-Core' 
 				with: [ spec includes: #( 'MonticelloTonel-FileSystem' 'MonticelloTonel-Pharo-Core' ) ];
 			package: 'MonticelloTonel-FileSystem' 
@@ -25,10 +33,30 @@ baseline: spec
 				with: [ spec includes: #( 'MonticelloTonel-Pharo-Tests' ) ];
 			package: 'MonticelloTonel-Pharo-Tests' 
 				with: [ spec requires: #( 'MonticelloTonel-Tests' ) ];
+			yourself.
+
+		spec 
+			group: 'default' with: #('core' 'tests');
 			yourself ].
+
+	spec for: #'gemstone64' do: [
+		spec 
+			yourself.
+
+		spec 
+			group: 'default' with: #('basic' 'basic tests');
+			yourself  ].
 
 	spec for: #'gemstone' do: [
 		spec 
+			package: 'Tonel-Core' 
+				with: [ spec includes: #( 'Tonel-GemStone-Core' ) ];
+			package: 'Tonel-GemStone-Core' 
+				with: [ spec requires: #( 'Tonel-Core' ) ];
+			package: 'Tonel-Tests' 
+				with: [ spec includes: #( 'Tonel-GemStone-Tests' ) ];
+			package: 'Tonel-GemStone-Tests' 
+				with: [ spec requires: #( 'Tonel-Tests' ) ];
 			package: 'MonticelloTonel-Core' 
 				with: [ spec includes: #( 'MonticelloTonel-GemStone-Directory' 'MonticelloTonel-GemStone-Core' ) ];
 			package: 'MonticelloTonel-GemStone-Directory' 
@@ -39,4 +67,8 @@ baseline: spec
 				with: [ spec includes: #( 'MonticelloTonel-GemStone-Tests' ) ];
 			package: 'MonticelloTonel-GemStone-Tests' 
 				with: [ spec requires: #( 'MonticelloTonel-Tests' ) ];
+			yourself.
+
+		spec 
+			group: 'default' with: #('core' 'tests');
 			yourself ].

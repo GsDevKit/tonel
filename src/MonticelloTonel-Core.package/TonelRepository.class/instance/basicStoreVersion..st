@@ -1,5 +1,3 @@
 accessing
 basicStoreVersion: aVersion
-  TonelWriter 
-	fileOut: aVersion 
-	on: self directory
+  TonelMCWriter fileOut: aVersion on: self directory
