@@ -13,10 +13,8 @@ baseline: spec
 			yourself.
 		
 		spec 
-			group: 'basic' with: #('Tonel-Core' );
-			group: 'basic tests' with: #('Tonel-Tests' );
-			group: 'core' with: #('MonticelloTonel-Core' );
-			group: 'tests' with: #('MonticelloTonel-Tests' 'Tonel-Monticello-Tests' );
+			group: 'monticello' with: #('MonticelloTonel-Core' );
+			group: 'monticello tests' with: #('MonticelloTonel-Tests' 'Tonel-Monticello-Tests' );
 			yourself ].
 
 	spec for: #'pharo' do: [
@@ -38,7 +36,7 @@ baseline: spec
 			yourself.
 
 		spec 
-			group: 'default' with: #('core' 'tests');
+			group: 'default' with: #('monticello' ' monticello tests');
 			yourself ].
 
 	spec for: #'gemstone64' do: [
@@ -46,7 +44,7 @@ baseline: spec
 			yourself.
 
 		spec 
-			group: 'default' with: #('basic' 'basic tests');
+			group: 'default' with: #('cypress' 'cypress tests');
 			yourself  ].
 
 	spec for: #'gemstone' do: [
@@ -68,5 +66,5 @@ baseline: spec
 			yourself.
 
 		spec 
-			group: 'default' with: #('core' 'tests');
+			group: 'default' with: #('monticello' ' monticello tests');
 			yourself ].
