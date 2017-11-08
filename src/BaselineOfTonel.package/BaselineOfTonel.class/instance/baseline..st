@@ -6,15 +6,17 @@ baseline: spec
 		spec 
 			package: 'Tonel-Core';
 			package: 'Tonel-Tests' with: [ spec requires: #( 'Tonel-Core' ) ];
+			package: 'Tonel-Monticello-Tests' 
+				with: [ spec requires: #( 'Tonel-Tests' ) ];
 			package: 'MonticelloTonel-Core' with: [ spec requires: #( 'Tonel-Core' ) ];
 			package: 'MonticelloTonel-Tests' with: [ spec requires: #( 'MonticelloTonel-Core' ) ];
 			yourself.
 		
 		spec 
 			group: 'basic' with: #('Tonel-Core' );
-			group: 'basic tests' with: #('Tonel-Tests');
+			group: 'basic tests' with: #('Tonel-Tests' );
 			group: 'core' with: #('MonticelloTonel-Core' );
-			group: 'tests' with: #('MonticelloTonel-Tests');
+			group: 'tests' with: #('MonticelloTonel-Tests' 'Tonel-Monticello-Tests' );
 			yourself ].
 
 	spec for: #'pharo' do: [
@@ -53,10 +55,6 @@ baseline: spec
 				with: [ spec includes: #( 'Tonel-GemStone-Core' ) ];
 			package: 'Tonel-GemStone-Core' 
 				with: [ spec requires: #( 'Tonel-Core' ) ];
-			package: 'Tonel-Tests' 
-				with: [ spec includes: #( 'Tonel-GemStone-Tests' ) ];
-			package: 'Tonel-GemStone-Tests' 
-				with: [ spec requires: #( 'Tonel-Tests' ) ];
 			package: 'MonticelloTonel-Core' 
 				with: [ spec includes: #( 'MonticelloTonel-GemStone-Directory' 'MonticelloTonel-GemStone-Core' ) ];
 			package: 'MonticelloTonel-GemStone-Directory' 
