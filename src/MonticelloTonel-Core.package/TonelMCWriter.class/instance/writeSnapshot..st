@@ -4,12 +4,12 @@ writeSnapshot: aSnapshot
 	
 	"ensure package dirs exists. 
 	 It has to be just one but well..."
-	self writePackage: (snapshot definitions 
+	self writePackage: (self definitions 
 		detect: #isOrganizationDefinition
 		ifFound: [ :each | each ]
-		ifNone: [ self createDefaultOrganizationFrom: (snapshot definitions detect: #isClassDefinition) ]).
+		ifNone: [ self createDefaultOrganizationFrom: (self definitions detect: #isClassDefinition) ]).
 	"now export classes"
-	(snapshot definitions 
+	(self definitions 
 		select: #isClassDefinition)
 		do: [ :each | self writer writeClass: each ].
 	"... and method extensions"

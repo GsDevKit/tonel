@@ -10,7 +10,7 @@ writeMethodExtensions
 				ifAbsentPut: [ Set new ])
 				add: each ].
 	classesAndMethods keysAndValuesDo: [ :className :methods | 
-		self tonelWriter
+		self writer
 			writeExtensionMethods: methods 
 			className: className ]
 		

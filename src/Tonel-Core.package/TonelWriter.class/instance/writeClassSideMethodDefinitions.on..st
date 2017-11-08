@@ -1,6 +1,6 @@
 private writing
 writeClassSideMethodDefinitions: aClassDefinition on: aStream
-	((snapshot definitions 
+	((self definitions 
 		select: [ :each | 
 			each isMethodDefinition 
 			and: [ each className = aClassDefinition className
