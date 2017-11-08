@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "",
+	"commentStamp" : "dkh 11/08/2017 15:26",
 	"instvars" : [
-		"directory" ],
-	"name" : "TonelReaderTest",
+		 ],
+	"name" : "TonelMCRepositoryTest",
 	"pools" : [
 		 ],
-	"super" : "MCTestCase",
+	"super" : "MCDirectoryRepositoryTest",
 	"type" : "normal" }

@@ -4,11 +4,11 @@
 		 ],
 	"classvars" : [
 		 ],
-	"commentStamp" : "EstebanLorenzano 9/11/2017 12:10",
+	"commentStamp" : "dkh 11/08/2017 15:24",
 	"instvars" : [
-		"packageDirectory" ],
-	"name" : "TonelReader",
+		 ],
+	"name" : "TonelMCRepository",
 	"pools" : [
 		 ],
-	"super" : "MCVersionReader",
+	"super" : "MCDirectoryRepository",
 	"type" : "normal" }

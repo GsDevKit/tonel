@@ -6,7 +6,8 @@
 		 ],
 	"commentStamp" : "EstebanLorenzano 9/11/2017 12:09",
 	"instvars" : [
-		"stream" ],
+		"stream",
+		"packageReader" ],
 	"name" : "TonelParser",
 	"pools" : [
 		 ],

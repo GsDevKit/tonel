@@ -1,3 +1,3 @@
 accessing
 readerClass
-	^ TonelReader
+  ^ TonelMCReader
