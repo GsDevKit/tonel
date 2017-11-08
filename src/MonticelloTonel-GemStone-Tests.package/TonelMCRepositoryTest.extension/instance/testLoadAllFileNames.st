@@ -1,6 +1,7 @@
 *monticellotonel-gemstone-tests
 testLoadAllFileNames
-  | mem |
-  mem := self newMemoryFileSystem.
-  repository := TonelMCRepository new directory: mem.
-  self assert: repository allFileNames equals: #('MonticelloMocks')
+	| snapshot dir |
+  	snapshot := self mockSnapshot.
+  	dir := self newFileDirectorySnapshot: snapshot.
+  	repository := TonelMCRepository new directory: dir.
+  	self assert: repository allFileNames equals: #('Monticello-Mocks')
