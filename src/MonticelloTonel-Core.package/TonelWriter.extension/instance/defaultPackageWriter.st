@@ -1,4 +1,4 @@
-private
+*monticellotonel-core
 defaultPackageWriter
 
 	^ TonelMCWriter new
