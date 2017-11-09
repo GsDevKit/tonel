@@ -4,5 +4,5 @@ newMemoryFileSystemSnapshot: aSnapshop
 	 will break too."
 	| mem |
 	mem := FileSystem memory root.
-	(TonelWriter on: mem) writeSnapshot: aSnapshop.
+	(TonelMCWriter on: mem) writeSnapshot: aSnapshop.
 	^ mem

@@ -4,5 +4,5 @@ newMemoryFileSystem
 	 will break too."
 	| mem |
 	mem := FileSystem memory root.
-	(TonelWriter on: mem) writeSnapshot: self mockSnapshot.
+	(TonelMCWriter on: mem) writeSnapshot: self mockSnapshot.
 	^ mem

@@ -3,7 +3,7 @@ testWriteSnapshot
 	| writer mem nl |
 	
 	mem := FileSystem memory root.
-	writer := TonelWriter on: mem.
+	writer := TonelMCWriter on: mem.
 	writer writeSnapshot: self mockSnapshot.
 	
 	self assert: (mem / 'MonticelloMocks') exists.
