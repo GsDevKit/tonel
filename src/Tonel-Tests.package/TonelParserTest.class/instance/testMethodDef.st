@@ -7,12 +7,10 @@ Object>>name [
 	^ self printString
 ]'
 		rule: #methodDef
-		equals: (MCMethodDefinition
-			className: #Object
+		equals: (self newMethodDefinitionForClassNamed: #Object
 			classIsMeta: false
 			selector: #name
 			category: 'accessing' 
-			timeStamp: nil
 			source: 'name
 	^ self printString').
 			
@@ -22,12 +20,10 @@ Object class>>name [
 	^ self printString
 ]'
 		rule: #methodDef
-		equals: (MCMethodDefinition
-			className: #Object
+		equals: (self newMethodDefinitionForClassNamed: #Object
 			classIsMeta: true
 			selector: #name
 			category: ''
-			timeStamp: nil
 			source: 'name 
 	^ self printString').
 
@@ -37,11 +33,9 @@ TClass classSide >> template: aSystemCategoryName [
 	"I really do not care"
 ]'
 		rule: #methodDef
-		equals: (MCMethodDefinition
-			className: #TClass
+		equals: (self newMethodDefinitionForClassNamed: #TClass
 			classIsMeta: true
 			selector: #template:
 			category: ''
-			timeStamp: nil
 			source: 'template: aSystemCategoryName 
 	"I really do not care"').
