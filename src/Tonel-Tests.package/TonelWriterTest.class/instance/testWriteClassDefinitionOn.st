@@ -1,11 +1,9 @@
 tests
 testWriteClassDefinitionOn
-  | writer def stream packageWriter |
-  packageWriter := self defaultPackageWriter.
+  | writer def stream |
   writer := TonelWriter new
-    packageWriter: packageWriter;
+    packageWriter: self defaultPackageWriter;
     yourself.
-  packageWriter writer: writer.
   stream := TonelParser writeStreamClass on: String new.
   def := self
     creatClassDefinition: #'SomeObject'
