@@ -1,3 +1,4 @@
 accessing
 projectClass
-    ^ MetacelloCypressBaselineProject
+  Smalltalk at: #'MetacelloCypressBaselineProject' ifPresent: [ :cl | ^ cl ].
+  ^ super projectClass
