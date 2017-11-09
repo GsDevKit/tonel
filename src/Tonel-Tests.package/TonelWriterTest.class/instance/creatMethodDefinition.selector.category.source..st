@@ -1,4 +1,4 @@
-*Tonel-Monticello-Tests
+*Tonel-Tests
 creatMethodDefinition: classString selector: selectorString category: catString source: sourceString
   ^ self
     creatMethodDefinition: classString
