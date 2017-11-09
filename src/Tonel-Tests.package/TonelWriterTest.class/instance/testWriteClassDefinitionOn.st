@@ -2,7 +2,7 @@ tests
 testWriteClassDefinitionOn
   | writer def stream |
   writer := TonelWriter new.
-  stream := WriteStreamPortable on: String new.
+  stream := TonelParser writeStreamClass on: String new.
   def := self creatClassDefinition: #'SomeObject'
     superclassName: #'Object'
     category: #'Kernel'

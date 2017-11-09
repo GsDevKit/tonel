@@ -3,7 +3,7 @@ removeFrom: aString enclosingStart: startChar end: endChar clean: cleanSymbol
   "cleanSymbol can be #left, #rigth and #both"
 
   | result stop ch start end |
-  result := ReadStreamPortable on: aString trimBoth.
+  result := self class readStreamClass on: aString trimBoth.
   result peek = startChar
     ifFalse: [ TonelParseError signal: 'I cannot remove enclosing start' ].
   result skip: 1.

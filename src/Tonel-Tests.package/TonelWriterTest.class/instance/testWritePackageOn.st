@@ -2,7 +2,7 @@ tests
 testWritePackageOn
   | writer def stream |
   writer := TonelWriter new.
-  stream := WriteStreamPortable on: String new.
+  stream := TonelParser writeStreamClass on: String new.
   writer writePackage: 'ThePackage' on: stream.
   self
     assert: stream contents
@@ -11,7 +11,7 @@ testWritePackageOn
 '
 ).
 
-  stream := WriteStreamPortable on: String new.
+  stream := TonelParser writeStreamClass on: String new.
   writer writePackage: 'The-Package' on: stream.
   self
     assert: stream contents
@@ -20,7 +20,7 @@ testWritePackageOn
 '
 ).
 
-  stream := WriteStreamPortable on: String new.
+  stream := TonelParser writeStreamClass on: String new.
   writer writePackage: 'The Package' on: stream.
   self
     assert: stream contents
