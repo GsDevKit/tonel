@@ -9,11 +9,9 @@ newMethodDefinitionFrom: anArray
 	source := String streamContents: [ :s | 
 		s << anArray fourth second.
 		anArray fifth ifNotEmpty: [ :src | s << src ] ].
-	
-	^ MCMethodDefinition
-		className: className
+
+	^ self packageReader newMethodDefinitionForClassNamed: className
 		classIsMeta: meta
 		selector: selector
 		category: (metadata at: #category ifAbsent: [ '' ]) 
-		timeStamp: nil
 		source: source

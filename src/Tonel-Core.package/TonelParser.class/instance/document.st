@@ -5,4 +5,4 @@ document
 	self methodDefList.
 	 } 
 	flattened
-	select: #notNil
+	select: [:each | each notNil ]

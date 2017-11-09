@@ -1,4 +1,4 @@
-private factory
+definition creation
 newTraitDefinitionFrom: anArray
 	| metadata traitDefs |
 	metadata := anArray sixth.

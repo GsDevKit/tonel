@@ -1,4 +1,4 @@
-private factory
+definition creation
 newClassDefinitionFrom: anArray
 	| metadata |
 
