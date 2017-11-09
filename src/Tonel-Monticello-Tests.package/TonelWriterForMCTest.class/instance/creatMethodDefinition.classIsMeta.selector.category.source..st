@@ -1,4 +1,4 @@
-*Tonel-Monticello-Tests
+private
 creatMethodDefinition: classString classIsMeta: metaBoolean selector: selectorString category: catString source: sourceString
   ^ MCMethodDefinition
     className: classString

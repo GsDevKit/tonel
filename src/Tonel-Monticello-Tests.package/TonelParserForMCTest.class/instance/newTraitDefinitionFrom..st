@@ -1,3 +1,3 @@
-*Tonel-Monticello-Tests
+private
 newTraitDefinitionFrom: anArray
   ^ TonelMCReader newTraitDefinitionFrom: anArray
