@@ -1,3 +1,3 @@
 private testing
 isClass: aClassDefinition
-	^ aClassDefinition class = MCClassDefinition
+	^ aClassDefinition class = CypressClassDefinition

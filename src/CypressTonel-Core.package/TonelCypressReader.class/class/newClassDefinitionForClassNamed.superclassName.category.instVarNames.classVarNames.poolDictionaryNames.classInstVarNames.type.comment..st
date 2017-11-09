@@ -5,8 +5,8 @@ newClassDefinitionForClassNamed: nameString superclassName: superclassString cat
     superclassName: superclassString
     category: categoryString
     instVarNames: ivarArray
-    classVarNames: cvarArray
     classInstVarNames: civarArray
+    classVarNames: cvarArray
     poolDictionaryNames: poolArray
     comment: commentString
     subclassType: typeSymbol
