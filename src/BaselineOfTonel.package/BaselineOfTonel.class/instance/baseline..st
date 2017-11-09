@@ -42,8 +42,15 @@ baseline: spec
   spec
     for: #'gemstone64'
     do: [ 
-      spec yourself.
       spec
+        package: 'Tonel-Core'
+          with: [ spec includes: #('Tonel-GemStoneBase-Core') ];
+        package: 'Tonel-GemStoneBase-Core'
+          with: [ spec requires: #('Tonel-Core') ];
+        yourself.
+      spec
+        group: 'cypress' with: #('Tonel-Core');
+        group: 'cypress tests' with: #('Tonel-Tests');
         group: 'default' with: #('cypress' 'cypress tests');
         yourself ].
   spec
