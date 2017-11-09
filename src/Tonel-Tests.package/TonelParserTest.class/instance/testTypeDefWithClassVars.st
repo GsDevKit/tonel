@@ -1,7 +1,8 @@
 tests
 testTypeDefWithClassVars
-	self 
-		assertParse: '
+  self
+    assertParse:
+      '
 "
 this is a test
 "
@@ -17,17 +18,15 @@ Class {
 	#category : #MonticelloMocks
 }
 '
-		rule: #typeDef
-		equals: (MCClassDefinition
-        name: 'MCMockASubclass'
+    rule: #'typeDef'
+    equals:
+      (self
+        newClassDefinitionForClassNamed: 'MCMockASubclass'
         superclassName: 'MCMockClassA'
-        traitComposition: '{}'
-        classTraitComposition: '{}'
         category: 'MonticelloMocks'
-        instVarNames: #( x)
-        classVarNames: #(Y)
+        instVarNames: #(#'x')
+        classVarNames: #(#'Y')
         poolDictionaryNames: #()
         classInstVarNames: #()
-        type: #normal
-        comment: 'this is a test'
-        commentStamp: nil)
+        type: #'normal'
+        comment: 'this is a test')
