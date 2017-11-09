@@ -87,5 +87,6 @@ baseline: spec
           with: [ spec requires: #('MonticelloTonel-Tests') ];
         yourself.
       spec
-        group: 'default' with: #('monticello' 'monticello tests');
+        group: 'default'
+          with: #('monticello' 'monticello tests' 'cypress' 'cypress tests');
         yourself ]
