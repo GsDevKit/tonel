@@ -1,4 +1,4 @@
-*Tonel-Tests
+private
 creatMethodDefinition: classString selector: selectorString category: catString source: sourceString
   ^ self
     creatMethodDefinition: classString
