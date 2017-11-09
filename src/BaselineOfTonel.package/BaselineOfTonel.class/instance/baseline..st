@@ -40,6 +40,15 @@ baseline: spec
         group: 'default' with: #('monticello' 'monticello tests');
         yourself ].
   spec
+    for: #'gemstoneCommon'
+    do: [ 
+      spec
+        package: 'Tonel-Core'
+          with: [ spec includes: #('Tonel-GemStoneCommon-Core') ];
+        package: 'Tonel-GemStoneCommon-Core'
+          with: [ spec requires: #('Tonel-Core') ];
+        yourself ].
+  spec
     for: #'gemstone64'
     do: [ 
       spec
