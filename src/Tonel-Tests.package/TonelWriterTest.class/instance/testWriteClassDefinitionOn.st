@@ -1,9 +1,14 @@
 tests
 testWriteClassDefinitionOn
-  | writer def stream |
-  writer := TonelWriter new.
+  | writer def stream packageWriter |
+  packageWriter := self defaultPackageWriter.
+  writer := TonelWriter new
+    packageWriter: packageWriter;
+    yourself.
+  packageWriter writer: writer.
   stream := TonelParser writeStreamClass on: String new.
-  def := self creatClassDefinition: #'SomeObject'
+  def := self
+    creatClassDefinition: #'SomeObject'
     superclassName: #'Object'
     category: #'Kernel'
     instVarNames: #()
@@ -27,7 +32,8 @@ Class {
 '
         withLineEndings: TonelWriter lineEnding).
   stream := String new writeStream.
-  def := self creatClassDefinition: #'SomeObject'
+  def := self
+    creatClassDefinition: #'SomeObject'
     superclassName: #'Object'
     category: #'Kernel'
     instVarNames: #(#'a' #'b' #'c')

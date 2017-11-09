@@ -1,0 +1,3 @@
+private
+defaultPackageWriter
+  ^ TonelMCWriter new
