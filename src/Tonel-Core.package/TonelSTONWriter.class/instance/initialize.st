@@ -2,4 +2,4 @@ initialization
 initialize
 	super initialize.
 	self prettyPrint: true.
-	aliases := { OrderedDictionary -> nil } asDictionary
+	aliases := { TonelWriter orderedDictionaryClass -> nil } asDictionary
