@@ -1,3 +1,3 @@
-*Tonel-Cypress-Tests
+private
 newClassDefinitionFrom: anArray
   ^ TonelCypressReader newClassDefinitionFrom: anArray

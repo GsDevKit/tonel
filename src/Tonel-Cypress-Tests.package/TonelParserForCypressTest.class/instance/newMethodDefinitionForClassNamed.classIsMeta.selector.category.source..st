@@ -1,4 +1,4 @@
-*Tonel-Cypress-Tests
+private
 newMethodDefinitionForClassNamed: className classIsMeta: meta selector: selector category: category source: source
   ^ TonelCypressReader
     newMethodDefinitionForClassNamed: className
