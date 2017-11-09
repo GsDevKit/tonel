@@ -47,6 +47,8 @@ baseline: spec
           with: [ spec includes: #('Tonel-GemStoneCommon-Core') ];
         package: 'Tonel-GemStoneCommon-Core'
           with: [ spec requires: #('Tonel-Core') ];
+        package: 'CypressTonel-Core'
+          with: [ spec requires: #('Tonel-Core') ];
         package: 'Tonel-Cypress-Tests'
           with: [ spec requires: #('Tonel-Tests') ];
         yourself.
