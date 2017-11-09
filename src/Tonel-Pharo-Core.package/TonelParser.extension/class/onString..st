@@ -1,3 +1,3 @@
-*monticellotonel-pharo-core
+*tonel-pharo-core
 onString: aString
   ^ self on: aString readStream 
