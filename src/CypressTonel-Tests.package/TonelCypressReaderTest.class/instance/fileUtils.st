@@ -1,0 +1,3 @@
+private
+fileUtils
+  ^ CypressFileUtilities current

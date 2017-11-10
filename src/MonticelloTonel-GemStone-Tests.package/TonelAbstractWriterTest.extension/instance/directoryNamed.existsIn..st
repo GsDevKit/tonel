@@ -1,4 +1,6 @@
 *monticellotonel-gemstone-tests
 directoryNamed: directoryName existsIn: dir
-
-  ^ (dir directoryNamed: directoryName) exists
+  | fileUtils filePath |
+  fileUtils := self fileUtils.
+  filePath := fileUtils directoryFromPath: directoryName relativeTo: dir.
+  ^ fileUtils directoryExists: filePath

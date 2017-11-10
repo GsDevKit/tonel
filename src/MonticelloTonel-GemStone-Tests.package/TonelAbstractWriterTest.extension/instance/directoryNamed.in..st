@@ -1,4 +1,5 @@
 *monticellotonel-gemstone-tests
 directoryNamed: directoryName in: dir
-
-  ^ dir directoryNamed: directoryName
+  | fileUtils filePath |
+  fileUtils := self fileUtils.
+  ^ fileUtils directoryFromPath: directoryName relativeTo: dir

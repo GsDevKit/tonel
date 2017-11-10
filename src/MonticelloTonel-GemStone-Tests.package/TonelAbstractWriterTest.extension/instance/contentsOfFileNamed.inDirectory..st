@@ -1,4 +1,6 @@
 *monticellotonel-gemstone-tests
 contentsOfFileNamed: fileName inDirectory: dir
-
-  ^ (dir fileNamed: fileName) contents
+  self fileUtils
+    readStreamFor: fileName
+    in: dir
+    do: [ :stream | ^ stream contents ]

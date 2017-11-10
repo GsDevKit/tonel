@@ -1,4 +1,5 @@
 *monticellotonel-gemstone-tests
 fileNamesIn: dir
-
-  ^(dir entries collect: [ :each | each name ]) sorted
+  | fileUtils filePath |
+  fileUtils := self fileUtils.
+  ^ fileUtils entryNamesFrom: dir
