@@ -1,29 +1,34 @@
 tests
 testWriteSnapshot
-  | writer dir nl x |
+  | writer dir nl packageDir |
   dir := self directory.
   writer := TonelMCWriter on: dir.
   writer writeSnapshot: self mockSnapshot.
-  self assert: (x := dir directoryNamed: 'MonticelloMocks') exists.
+  self assert: (self directoryNamed: 'MonticelloMocks' existsIn: dir).
+  packageDir := self directoryNamed: 'MonticelloMocks' in: dir.
   self
     assert:
-      ((x := dir directoryNamed: 'MonticelloMocks') entries
-        collect: [ :each | each name ]) sorted
+      (self fileNamesIn: packageDir) sorted
     equals:
-      #('MCMockASubclass.class.st' 'MCMockClassA.class.st' 'MCMockClassB.class.st' 'MCMockClassD.class.st' 'MCMockClassE.class.st' 'MCMockClassF.class.st' 'MCMockClassG.class.st' 'MCMockClassH.class.st' 'MCMockClassI.class.st' 'MCMockClassJ.class.st' 'MCMockClassK.class.st' 'MCMockClassKA.class.st' 'MCMockClassKB.class.st' 'MCMockClassL.class.st' 'MCMockClassM.class.st' 'MCSnapshotTest.extension.st' 'package.st').
+      #(
+			'MCMockASubclass.class.st' 
+			'MCMockClassA.class.st' 
+			'MCMockClassB.class.st' 
+			'MCMockClassD.class.st' 
+			'MCMockClassE.class.st' 
+			'MCMockClassF.class.st' 
+			'MCMockClassG.class.st' 
+			'MCMockClassH.class.st' 
+			'MCMockClassI.class.st' 
+			'MCSnapshotTest.extension.st'
+			'package.st').
   nl := TonelWriter lineEnding.
   self
-    assert:
-      ((dir directoryNamed: 'Monticello-Mocks') fileNamed: 'MCMockClassA.class.st')
-        contents
+    assert: (self contentsOfFileNamed: 'MCMockClassA.class.st' inDirectory: packageDir)      
     equals: (self expectedMCMockClassAClassSt withLineEndings: nl).
   self
-    assert:
-      ((dir directoryNamed: 'Monticello-Mocks') fileNamed: 'MCMockASubclass.class.st')
-        contents
+    assert: (self contentsOfFileNamed: 'MCMockASubclass.class.st' inDirectory: packageDir)
     equals: (self expectedMCMockASubclassClassSt withLineEndings: nl).
   self
-    assert:
-      ((dir directoryNamed: 'Monticello-Mocks')
-        fileNamed: 'MCSnapshotTest.extension.st') contents
-    equals: (self expectedMCSnapshotTestExtensionSt withLineEndings: nl)
+    assert: (self contentsOfFileNamed: 'MCSnapshotTest.extension.st' inDirectory: packageDir)
+     equals: (self expectedMCSnapshotTestExtensionSt withLineEndings: nl)

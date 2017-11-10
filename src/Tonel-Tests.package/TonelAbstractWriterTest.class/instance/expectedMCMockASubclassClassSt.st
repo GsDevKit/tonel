@@ -9,8 +9,16 @@ expectedMCMockASubclassClassSt
 	#classVars : [
 		''Y''
 	],
-	#category : #Monticello-Mocks
+	#category : #MonticelloMocks
 }
+
+{ #category : #''as yet unclassified'' }
+MCMockASubclass class >> initialize [
+
+	InitializationOrder := InitializationOrder
+		ifNil: [ -100 ] "let the test fail"
+		ifNotNil: [ InitializationOrder + 1.]
+]
 
 { #category : #''as yet unclassified'' }
 MCMockASubclass >> variables [
