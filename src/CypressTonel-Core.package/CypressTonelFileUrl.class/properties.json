@@ -1,0 +1,14 @@
+{
+	"category" : "CypressTonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 11/10/2017 14:51",
+	"instvars" : [
+		 ],
+	"name" : "CypressTonelFileUrl",
+	"pools" : [
+		 ],
+	"super" : "CypressAbstractFileUrl",
+	"type" : "normal" }
