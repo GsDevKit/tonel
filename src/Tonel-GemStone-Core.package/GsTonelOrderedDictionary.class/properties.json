@@ -1,0 +1,16 @@
+{
+	"category" : "Tonel-GemStone-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 11/10/2017 12:57",
+	"instvars" : [
+		"size",
+		"keys",
+		"values" ],
+	"name" : "GsTonelOrderedDictionary",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
