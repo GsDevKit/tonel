@@ -1,4 +1,4 @@
-*monticellotonel-gemstone-tests
+*tonel-gemstone-tests
 contentsOfFileNamed: fileName inDirectory: dir
   self fileUtils
     readStreamFor: fileName

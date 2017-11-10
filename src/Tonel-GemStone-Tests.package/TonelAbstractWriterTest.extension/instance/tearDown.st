@@ -1,4 +1,4 @@
-*monticellotonel-gemstone-tests
+*tonel-gemstone-tests
 tearDown
   directory
     ifNotNil: [ :dir | 

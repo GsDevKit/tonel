@@ -1,4 +1,4 @@
-*monticellotonel-gemstone-tests
+*tonel-gemstone-tests
 directoryNamed: directoryName existsIn: dir
   | fileUtils filePath |
   fileUtils := self fileUtils.

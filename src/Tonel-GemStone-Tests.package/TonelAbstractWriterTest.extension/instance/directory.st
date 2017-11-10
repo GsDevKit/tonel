@@ -1,4 +1,4 @@
-*monticellotonel-gemstone-tests
+*tonel-gemstone-tests
 directory
   directory
     ifNil: [ 
