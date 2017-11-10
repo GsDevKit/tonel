@@ -1,5 +1,5 @@
 *cypresstonel-gemstone-tests
 directory
 	directory ifNil:
-		[directory := MCPlatformSupport defaultDirectoryNamed: 'mctest'].
+		[directory := (GsFile _expandEnvVariable: 'PWD' isClient: false)].
 	^ directory
