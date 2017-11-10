@@ -1,0 +1,4 @@
+mocks
+mockSnapshot
+
+	^ self mockCypressSnapshot

@@ -1,0 +1,4 @@
+private
+writerClass
+
+  self subclassResponsibility

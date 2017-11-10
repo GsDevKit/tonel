@@ -1,0 +1,14 @@
+{
+	"category" : "CypressTonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		"directoryPath" ],
+	"name" : "CypressTonelRepository",
+	"pools" : [
+		 ],
+	"super" : "CypressAbstractRepository",
+	"type" : "normal" }

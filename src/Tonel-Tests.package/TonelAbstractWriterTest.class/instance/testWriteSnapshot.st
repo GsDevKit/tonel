@@ -2,7 +2,7 @@ tests
 testWriteSnapshot
   | writer dir nl packageDir |
   dir := self directory.
-  writer := TonelMCWriter on: dir.
+  writer := self writerClass on: dir.
   writer writeSnapshot: self mockSnapshot.
   self assert: (self directoryNamed: 'MonticelloMocks' existsIn: dir).
   packageDir := self directoryNamed: 'MonticelloMocks' in: dir.
