@@ -2,7 +2,7 @@ tests
 testLoadDefinitions
   | snapshot reader |
   snapshot := self mockSnapshot.
-  reader := self createReaderFor: snapshot fileName: 'MonticelloMocks'.
+  reader := self createReaderFor: self mockMCSnapshot fileName: 'MonticelloMocks'.
   reader loadDefinitions.
   self assert: reader definitions size equals: snapshot definitions size.
   reader definitions sorted

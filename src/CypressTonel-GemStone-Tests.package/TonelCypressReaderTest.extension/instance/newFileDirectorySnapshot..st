@@ -5,5 +5,5 @@ newFileDirectorySnapshot: aSnapshot
 
   | dir |
   dir := self directory.
-  (TonelMCWriter on: dir) writeSnapshot: aSnapshot.
+  (TonelMCWriter on: dir) writeSnapshot: aSnapshot. "fo now, until we get a working cypress writer"
   ^ dir

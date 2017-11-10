@@ -1,0 +1,3 @@
+*cypresstonel-core
+isMethodDefinition
+  ^ false

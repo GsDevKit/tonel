@@ -1,0 +1,14 @@
+{
+	"category" : "CypressTonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "CypressTonelPackageReader",
+	"pools" : [
+		 ],
+	"super" : "CypressTonelAbstractPackageFiler",
+	"type" : "normal" }

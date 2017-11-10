@@ -1,4 +1,3 @@
 mocks
 mockSnapshot
-
-	^ self mockMCSnapshot
+  ^ self mockCypressSnapshot

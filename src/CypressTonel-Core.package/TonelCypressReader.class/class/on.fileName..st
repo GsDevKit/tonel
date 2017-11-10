@@ -1,5 +1,7 @@
 reading
-on: stream fileName: fileName
-	^ (self on: stream)
-		packageDirectory: fileName;
-		yourself
+on: rootDirectoryPath fileName: packageName
+  | repository |
+  repository := CypressTonelRepository on: rootDirectoryPath.
+  ^ (self forRepository: repository)
+    packageName: packageName;
+    yourself
