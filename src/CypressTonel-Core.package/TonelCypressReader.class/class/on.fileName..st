@@ -1,7 +1,9 @@
 reading
 on: rootDirectoryPath fileName: packageName
-  | repository |
-  repository := CypressTonelRepository on: rootDirectoryPath.
-  ^ (self forRepository: repository)
+  | reader |
+  reader := self new.
+  ^ reader
+    packageDirectory:
+        rootDirectoryPath , reader fileUtils pathNameDelimiter , packageName;
     packageName: packageName;
     yourself
