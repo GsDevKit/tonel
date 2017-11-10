@@ -3,8 +3,8 @@ typeClassDefinitionOf: aClassDefinition
 	| definition |
 	
 	definition := self class orderedDictionaryClass new 
-		at: #name put: aClassDefinition className; 
-		at: #superclass put: aClassDefinition superclassName;
+		at: #name put: aClassDefinition className asSymbol; 
+		at: #superclass put: aClassDefinition superclassName asSymbol;
 		yourself.
 
 	aClassDefinition type = #normal ifFalse: [ 
@@ -16,16 +16,16 @@ typeClassDefinitionOf: aClassDefinition
 	aClassDefinition hasClassTraitComposition ifTrue: [ 
 		definition at: #classTraits put: aClassDefinition classTraitCompositionString ].
 	
-	(aClassDefinition variables select: #isInstanceVariable thenCollect: #name)
+	(aClassDefinition instVarNames)
 		ifNotEmpty: [ :vars | definition at: #instVars put: vars asArray ].
 
-	(aClassDefinition variables select: #isClassVariable thenCollect: #name)
+	(aClassDefinition classVarNames)
 		ifNotEmpty: [ :vars | definition at: #classVars put: vars asArray ].
 		
-	(aClassDefinition variables select: #isPoolImport thenCollect: #name)
+	((aClassDefinition poolDictionaries) collect: [:each | each asString])
 		ifNotEmpty: [ :vars | definition at: #pools put: vars asArray ].
 		
-	(aClassDefinition variables select: #isClassInstanceVariable thenCollect: #name)
+	(aClassDefinition classInstVarNames)
 		ifNotEmpty: [ :vars | definition at: #classInstVars put: vars asArray ].
 
 	definition 		
