@@ -1,4 +1,3 @@
 *cypresstonel-core
 hasComment
-
-	^comment notNil
+  ^ comment notNil and: [ comment ~= '' ]
