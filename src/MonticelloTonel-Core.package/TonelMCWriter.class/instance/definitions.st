@@ -1,0 +1,4 @@
+accessing
+definitions
+
+	^ snapshot definitions

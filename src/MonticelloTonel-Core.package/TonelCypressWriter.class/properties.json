@@ -1,0 +1,17 @@
+{
+	"category" : "MonticelloTonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 11/09/2017 15:27",
+	"instvars" : [
+		"snapshot",
+		"sourceDir",
+		"packageDir",
+		"writer" ],
+	"name" : "TonelCypressWriter",
+	"pools" : [
+		 ],
+	"super" : "CypressAbstractPackageWriter",
+	"type" : "normal" }

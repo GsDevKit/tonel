@@ -1,0 +1,14 @@
+{
+	"category" : "Tonel-Cypress-Tests",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "",
+	"instvars" : [
+		 ],
+	"name" : "TonelWriterForCypressTest",
+	"pools" : [
+		 ],
+	"super" : "TonelWriterTest",
+	"type" : "normal" }

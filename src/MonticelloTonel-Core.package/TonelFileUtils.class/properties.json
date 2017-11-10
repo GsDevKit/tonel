@@ -1,0 +1,14 @@
+{
+	"category" : "MonticelloTonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		"Current" ],
+	"commentStamp" : "EstebanLorenzano 9/21/2017 19:03",
+	"instvars" : [
+		 ],
+	"name" : "TonelFileUtils",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }

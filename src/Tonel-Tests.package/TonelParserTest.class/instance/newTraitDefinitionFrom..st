@@ -1,0 +1,3 @@
+private
+newTraitDefinitionFrom: anArray
+  self subclassResponsibility

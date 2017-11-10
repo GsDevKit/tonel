@@ -1,0 +1,4 @@
+*cypresstonel-core
+hasClassTraitComposition
+
+	^false
