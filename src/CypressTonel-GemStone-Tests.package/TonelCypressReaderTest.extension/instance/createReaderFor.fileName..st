@@ -1,5 +1,5 @@
 *cypresstonel-gemstone-tests
-createReaderFor: snapshot fileName: fileName
+createReaderFor: snapshot fileName: packageName
   | dir |
-  dir := self newFileDirectorySnapshot: snapshot.
-  ^ TonelCypressReader on: dir pathString fileName: fileName
+  dir := self newFileDirectorySnapshot: snapshot fileName: packageName.
+  ^ TonelCypressReader on: dir pathString fileName: packageName
