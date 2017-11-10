@@ -10,5 +10,5 @@
 	"name" : "TonelCypressReader",
 	"pools" : [
 		 ],
-	"super" : "CypressAbstractPackageReader",
+	"super" : "CypressAbstractPackageFiler",
 	"type" : "normal" }
