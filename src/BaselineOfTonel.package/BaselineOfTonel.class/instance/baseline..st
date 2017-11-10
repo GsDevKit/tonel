@@ -90,5 +90,5 @@ baseline: spec
         yourself.
       spec
         group: 'default'
-          with: #('monticello' 'monticello tests' 'cypress' 'cypress tests');
+          with: #('monticello' 'monticello tests');
         yourself ]
