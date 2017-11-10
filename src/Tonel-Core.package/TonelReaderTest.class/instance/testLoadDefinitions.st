@@ -1,9 +1,8 @@
-*monticellotonel-gemstone-tests
+tests
 testLoadDefinitions
-  | snapshot dir reader |
+  | snapshot reader |
   snapshot := self mockSnapshot.
-  dir := self newFileDirectorySnapshot: snapshot.
-  reader := TonelMCReader on: dir fileName: 'MonticelloMocks'.
+  reader := self createReaderFor: snapshot fileName: 'MonticelloMocks'.
   reader loadDefinitions.
   self assert: reader definitions size equals: snapshot definitions size.
   reader definitions sorted

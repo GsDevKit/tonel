@@ -1,0 +1,14 @@
+{
+	"category" : "Tonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 11/09/2017 17:08",
+	"instvars" : [
+		"directory" ],
+	"name" : "TonelReaderTest",
+	"pools" : [
+		 ],
+	"super" : "TestCase",
+	"type" : "normal" }
