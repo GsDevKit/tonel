@@ -1,5 +1,5 @@
 private
-mockSnapshotSTON
+mockMCSnapshotSTON
 	^ 'MCSnapshot {
 	#definitions : [
 		MCOrganizationDefinition {

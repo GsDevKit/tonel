@@ -1,14 +1,14 @@
 {
-	"category" : "MonticelloTonel-Tests",
+	"category" : "Tonel-Tests",
 	"classinstvars" : [
 		 ],
 	"classvars" : [
 		 ],
 	"commentStamp" : "",
 	"instvars" : [
-		 ],
-	"name" : "TonelMCWriterTest",
+		"directory" ],
+	"name" : "TonelAbstractWriterTest",
 	"pools" : [
 		 ],
-	"super" : "TonelAbstractWriterTest",
+	"super" : "TonelAbstractTest",
 	"type" : "normal" }

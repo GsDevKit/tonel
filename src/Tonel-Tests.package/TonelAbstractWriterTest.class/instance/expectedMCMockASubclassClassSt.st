@@ -1,4 +1,4 @@
-*monticellotonel-gemstone-tests
+tests
 expectedMCMockASubclassClassSt
 	^ 'Class {
 	#name : #MCMockASubclass,

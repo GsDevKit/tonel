@@ -1,13 +1,13 @@
-*monticellotonel-gemstone-tests
+tests
 testWriteSnapshot
   | writer dir nl x |
   dir := self directory.
   writer := TonelMCWriter on: dir.
   writer writeSnapshot: self mockSnapshot.
-  self assert: (x := dir directoryNamed: 'Monticello-Mocks') exists.
+  self assert: (x := dir directoryNamed: 'MonticelloMocks') exists.
   self
     assert:
-      ((x := dir directoryNamed: 'Monticello-Mocks') entries
+      ((x := dir directoryNamed: 'MonticelloMocks') entries
         collect: [ :each | each name ]) sorted
     equals:
       #('MCMockASubclass.class.st' 'MCMockClassA.class.st' 'MCMockClassB.class.st' 'MCMockClassD.class.st' 'MCMockClassE.class.st' 'MCMockClassF.class.st' 'MCMockClassG.class.st' 'MCMockClassH.class.st' 'MCMockClassI.class.st' 'MCMockClassJ.class.st' 'MCMockClassK.class.st' 'MCMockClassKA.class.st' 'MCMockClassKB.class.st' 'MCMockClassL.class.st' 'MCMockClassM.class.st' 'MCSnapshotTest.extension.st' 'package.st').

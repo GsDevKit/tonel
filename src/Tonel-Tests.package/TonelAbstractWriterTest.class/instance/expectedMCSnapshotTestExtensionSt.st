@@ -1,4 +1,4 @@
-*monticellotonel-gemstone-tests
+tests
 expectedMCSnapshotTestExtensionSt
 	^ 'Extension { #name : #MCSnapshotTest }
 
