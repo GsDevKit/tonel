@@ -1,0 +1,13 @@
+{
+	"category" : "CypressTonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"instvars" : [
+		 ],
+	"name" : "CypressTonelRepository",
+	"pools" : [
+		 ],
+	"super" : "CypressFileSystemRepository",
+	"type" : "normal" }
