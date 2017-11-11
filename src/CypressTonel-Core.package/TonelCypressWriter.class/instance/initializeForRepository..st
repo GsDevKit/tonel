@@ -1,4 +1,4 @@
 initializing - private
 initializeForRepository: aCypressFileSystemRepository
-
-	repository := aCypressFileSystemRepository
+  repository := aCypressFileSystemRepository.
+  self sourceDir: repository directoryPath

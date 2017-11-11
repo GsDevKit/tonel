@@ -1,4 +1,7 @@
 *cypresstonel-core
 type
-
-	^self subclassType
+  | st |
+  st := self subclassType.
+  st = ''
+    ifTrue: [ ^ #'normal' ].
+  ^ st
