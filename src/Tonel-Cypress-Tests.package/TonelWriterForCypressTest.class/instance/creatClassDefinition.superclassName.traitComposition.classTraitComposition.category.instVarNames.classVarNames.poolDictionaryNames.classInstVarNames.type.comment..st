@@ -1,6 +1,5 @@
 private
 creatClassDefinition: nameString superclassName: superclassString traitComposition: traitCompositionString classTraitComposition: classTraitCompositionString category: categoryString instVarNames: ivarArray classVarNames: cvarArray poolDictionaryNames: poolArray classInstVarNames: civarArray type: typeSymbol comment: commentString
-
   ^ CypressClassDefinition
     name: nameString
     superclassName: superclassString
@@ -10,4 +9,4 @@ creatClassDefinition: nameString superclassName: superclassString traitCompositi
     classVarNames: cvarArray
     poolDictionaryNames: poolArray
     comment: commentString
-    subclassType: typeSymbol
+    type: typeSymbol

@@ -11,4 +11,4 @@ newClassDefinitionFrom: anArray
     classVarNames: (metadata at: #'classVars' ifAbsent: [ #() ])
     poolDictionaryNames: (metadata at: #'pools' ifAbsent: [ #() ])
     comment: (anArray second ifNil: [ '' ])
-    subclassType: (metadata at: #'type' ifAbsent: [ #'normal' ]) asSymbol
+    type: (metadata at: #'type' ifAbsent: [ #'normal' ]) asSymbol

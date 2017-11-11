@@ -1,0 +1,3 @@
+*cypresstonel-core
+snapshot
+  ^ self

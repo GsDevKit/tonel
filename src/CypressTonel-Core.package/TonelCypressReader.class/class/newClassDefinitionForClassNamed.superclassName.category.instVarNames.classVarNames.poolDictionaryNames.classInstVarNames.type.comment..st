@@ -9,4 +9,4 @@ newClassDefinitionForClassNamed: nameString superclassName: superclassString cat
     classVarNames: cvarArray
     poolDictionaryNames: poolArray
     comment: commentString
-    subclassType: typeSymbol
+    type: typeSymbol
