@@ -52,8 +52,10 @@ baseline: spec
           with: [ spec requires: #('Tonel-Tests') ];
         package: 'Tonel-GemStone-Tests'
           with: [ spec requires: #('Tonel-Tests') ];
+        package: 'MonticelloTonel-Tests'
+          with: [ spec requires: #('Tonel-GemStone-Tests') ];
         package: 'CypressTonel-Tests'
-          with: [ spec requires: #('CypressTonel-Core') ];
+          with: [ spec requires: #('CypressTonel-Core' 'Tonel-GemStone-Tests') ];
         package: 'CypressTonel-Tests'
           with: [ spec includes: #('CypressTonel-GemStone-Tests') ];
         package: 'CypressTonel-GemStone-Tests'
@@ -62,8 +64,7 @@ baseline: spec
       spec
         group: 'cypress' with: #('Tonel-Core');
         group: 'cypress tests'
-          with:
-            #('Tonel-Tests' 'Tonel-Cypress-Tests' 'CypressTonel-Tests' 'Tonel-GemStone-Tests');
+          with: #('Tonel-Tests' 'Tonel-Cypress-Tests' 'CypressTonel-Tests');
         yourself ].
   spec
     for: #'gemstone64'
