@@ -4,9 +4,10 @@
 		 ],
 	"classvars" : [
 		 ],
+	"commentStamp" : "",
 	"instvars" : [
-		"stream",
-		"packageReader" ],
+		"packageReader",
+		"stream" ],
 	"name" : "TonelParser",
 	"pools" : [
 		 ],
