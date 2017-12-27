@@ -14,3 +14,4 @@ name: aClassName superclassName: aSuperclassName category: aCategory instVarName
     poolDictionaryNames: somePoolDictionaryNames
     comment: aComment
     subclassType: st
+    options: #()
