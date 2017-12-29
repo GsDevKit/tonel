@@ -1,0 +1,20 @@
+{
+	"category" : "CypressTonel-Core",
+	"classinstvars" : [
+		 ],
+	"classvars" : [
+		 ],
+	"commentStamp" : "dkh 12/29/2017 14:25",
+	"instvars" : [
+		"directoryPackageMap",
+		"diskTimestamps",
+		"diskSnapshots",
+		"imageSnapshots",
+		"snapshotDifferences",
+		"currentPackageName",
+		"currentOperations" ],
+	"name" : "CypressTonelPackageStringComparator",
+	"pools" : [
+		 ],
+	"super" : "Object",
+	"type" : "normal" }
