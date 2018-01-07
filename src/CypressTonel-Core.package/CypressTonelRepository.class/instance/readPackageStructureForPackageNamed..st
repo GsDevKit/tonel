@@ -3,6 +3,7 @@ readPackageStructureForPackageNamed: packageName
   | reader |
   reader := self reader
     packageName: packageName;
-    loadDefinitions;
+    packageStructure: (RwCypressPackageStructure named: packageName);
+    readPackageStructure;
     yourself.
-  ^ CypressSnapshot definitions: reader definitions
+  ^ reader
